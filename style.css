@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 20px;
+
+    background: linear-gradient(125deg, #1e3a8a, #312e81, #4c1d95, #be185d);
+    background-size: 400% 400%;
+    animation: gerakGradasi 15s ease infinite;
+}
+
+@keyframes gerakGradasi {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.foto-profil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+}
+
+.nama {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.bio{
+    margin-top: 0%;
+    font-weight: 400;
+}
+
+.wadah-link {
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    font-weight: 700;
+    transform: transform 0.2s ease-in-out;
+}
+
+.link:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
